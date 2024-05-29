@@ -3,10 +3,74 @@
     <title>RPG</title>
     <script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
     <link href="/css/my.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/resources/favicon.ico"/>
+    <script defer type="text/javascript" src="/html/script.js"></script>
 </head>
 <body>
 <h1>RPG admin panel</h1>
 <h2>Accounts list:</h2>
 
+<div class="accounts-per-page-wrapper">
+    <label for="accounts-per-page">Count per page:</label>
+    <select class="accounts-per-page" id="accounts-per-page"></select>
+
+</div>
+<table class="players-table">
+    <thead>
+        <tr class="players-table__row players-table__row-header">
+            <th class="header-cell cell_small">#</th>
+            <th class="header-cell">Name</th>
+            <th class="header-cell">Title</th>
+            <th class="header-cell">Race</th>
+            <th class="header-cell">Profession</th>
+            <th class="header-cell">Level</th>
+            <th class="header-cell">Birthday</th>
+            <th class="header-cell">Banned</th>
+            <th class="header-cell">Edit</th>
+            <th class="header-cell">Delete</th>
+        </tr>
+    </thead>
+    <tbody class = "players-table-body">
+
+    </tbody>
+</table>
+<div class="pagination-wrapper">
+    <span>Pages:</span>
+    <span class="pagination-buttons"></span>
+</div>
+
+<div class="create-form">
+    <h2>Create new account</h2>
+    <div class="create-field">
+        <label for="create-name-input">Name:</label>
+        <input id ="create-name-input" type="text" data-create-name/>
+    </div>
+    <div class="create-field">
+        <label for="create-title-input">Title:</label>
+        <input id ="create-title-input" type="text" data-create-title/>
+    </div>
+    <div class="create-field">
+        <label for="create-race-select">Race:</label>
+        <select id="create-race-select" data-create-race></select>
+    </div>
+    <div class="create-field">
+        <label for="create-profession-select">Profession:</label>
+        <select id="create-profession-select" data-create-profession></select>
+    </div>
+    <div class="create-field">
+        <label for="create-level-select">Level:</label>
+        <input id="create-level-select" type="text" data-create-level/>
+    </div>
+    <div class="create-field">
+        <label for="create-birthday-select">Birthday:</label>
+        <input id="create-birthday-select" type="date" data-create-birthday/>
+    </div>
+    <div class="create-field create-field__banned">
+        <label for="create-banned-select">Banned:</label>
+        <input id="create-banned-select" type="checkbox" data-create-banned/>
+    </div>
+
+    <button class="save-button" onclick="createAccount()">Create</button>
+</div>
 </body>
 </html>

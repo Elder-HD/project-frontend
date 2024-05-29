@@ -1,0 +1,93 @@
+.accounts-per-page-wrapper {
+    margin: 20px 0;
+}
+
+
+.players-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.header-cell {
+    border: 1px solid black;
+    width: auto;
+    padding: 5px;
+}
+
+.cell {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.active-pagination-button {
+    color: red;
+    font-weight: bold;
+}
+
+.edit-button, .delete-button {
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+.cell img {
+    width: 50%;
+}
+
+.pagination-wrapper {
+    padding: 15px 0;
+}
+
+button {
+    background: white;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.create-form {
+    padding: 5px;
+    border:1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.create-field {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+.create-field__banned {
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+.save-button {
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 24px;
+    margin-top: 15px;
+    color: white;
+    background-color: cornflowerblue;
+    width: 100%;
+}
+.create-field label {
+    width: 40%;
+}
+
+.create-form input, .create-form select {
+    width: 60%;
+}
+
+#create-banned-select {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin: 0;
+}
